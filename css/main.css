@@ -308,14 +308,19 @@ h2{
 h3{
   font-size: 3rem;
 }
-h4.eyebrow{
-  margin-top: 100px;
-  margin-bottom: -40px;
+h4{
+  font-size: 2rem;
+}
+h5{
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 0.7rem;
   font-weight: 300;
   color: #3C4858;
+}
+h5.eyebrow{
+  margin-top: 100px;
+  margin-bottom: -40px;
 }
 hr{
   border-top: 4px solid black;
@@ -346,7 +351,37 @@ a:link, a:visited, a:hover, a:active{
   background-size: cover;
   background-position: center center;
 }
-
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #F9FAFC;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  z-index: 10;
+}
+.footer {
+  margin-top: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-top: 1px solid #F9FAFC;
+}
+.footer ul h5{
+  margin-left: 40px;
+}
+ul {
+  margin: 0;
+  list-style: none;
+  font-weight: 300;
+  float: right;
+}
+li {
+  display: inline-block;
+  margin-left: 40px;
+}
 
 /* utilities */
 .line-style--1{
