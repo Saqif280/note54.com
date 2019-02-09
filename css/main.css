@@ -302,8 +302,20 @@ h1,h2,h3,h4{
 h1{
   font-size: 8rem;
 }
+h2{
+  font-size: 5rem;
+}
 h3{
   font-size: 3rem;
+}
+h4.eyebrow{
+  margin-top: 100px;
+  margin-bottom: -40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: #3C4858;
 }
 hr{
   border-top: 4px solid black;
@@ -325,6 +337,14 @@ a:link, a:visited, a:hover, a:active{
 }
 .section{
   padding-top: 200px;
+}
+.section--mood{
+  margin-top: 200px;
+  height: 1000px;
+  background: url(../img/mood.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 
