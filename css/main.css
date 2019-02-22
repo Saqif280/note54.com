@@ -353,6 +353,10 @@ button:hover, button:active{
   color: white;
   background-color: #1b1b1b;
 }
+img{
+  width: 100%;
+  display: block;
+}
 
 /* areas */
 .content{
@@ -447,6 +451,9 @@ li {
 
 
 /* utilities */
+.big{
+  font-size: 2rem !important;
+}
 .line-style--1{
   border-left: 5px dashed black;
   height: 100px;
@@ -466,7 +473,6 @@ li {
   margin-top: -150px;
   margin-bottom: 50px;
 }
-
 .spacer{
   /* margin-bottom: 100px; */
   width: 100%;
