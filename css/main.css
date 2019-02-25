@@ -350,7 +350,7 @@ button{
   font-weight: 300;
   font-size: 0.8rem;
   font-family: 'Roboto', sans-serif;
-  text-transform: lowercase;
+  text-transform: capitalize;
   letter-spacing: 2px;
   border: none;
   transition: 300ms;
@@ -402,7 +402,7 @@ img{
   font-size: 0.8rem;
   z-index: 10;
   font-family: 'Roboto', sans-serif;
-  text-transform: lowercase;
+  text-transform: capitalize;
   letter-spacing: 2px;
 }
 .footer {
