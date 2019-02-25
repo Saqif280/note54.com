@@ -342,13 +342,18 @@ input, textarea{
   margin-bottom: 40px;
 }
 button{
+  cursor: pointer;
   outline: none;
   padding: 20px 30px;
   background-color: #000;
   color: white;
-  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 0.8rem;
+  font-family: 'Roboto', sans-serif;
+  text-transform: lowercase;
+  letter-spacing: 2px;
   border: none;
-  transition: 500ms;
+  transition: 300ms;
 }
 button:hover, button:active{
   color: white;
@@ -379,6 +384,13 @@ img{
   background-size: cover;
   background-position: center center;
 }
+.title{
+  font-family: 'Playfair Display', serif;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
 .navbar{
   position: fixed;
   top: 0;
@@ -387,9 +399,11 @@ img{
   padding-bottom: 20px;
   background-color: #fff;
   border-bottom: 1px solid #F9FAFC;
-  font-family: 'Playfair Display', serif;
-  font-weight: 600;
+  font-size: 0.8rem;
   z-index: 10;
+  font-family: 'Roboto', sans-serif;
+  text-transform: lowercase;
+  letter-spacing: 2px;
 }
 .footer {
   /* margin-top: 100px; */
