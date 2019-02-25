@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 	// slide to id
 	$("a[href^='#']").click(function(e) {
 		e.preventDefault();
@@ -12,4 +13,18 @@ $(document).ready(function() {
 			scrollTop: position
 		}, 1000);
 	});
+
+	setTitleOpacity();
+	// when scroll
+	$(window).scroll(function(element){
+		setTitleOpacity();
+	});
+
+	function setTitleOpacity() {
+		var scrollTop = $(window).scrollTop();
+		var wHeight = $(window).height();
+		var opacity = scrollTop/wHeight;
+		if (opacity > 1) opacity = 1;
+		$('.title').css("opacity", opacity);
+	}
 });
