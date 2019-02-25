@@ -307,6 +307,7 @@ h2{
 }
 h3{
   font-size: 3rem;
+  line-height: 55px;
 }
 h4{
   font-size: 2rem;
@@ -337,7 +338,7 @@ input, textarea{
   resize: none;
   /* border: 1px solid #F9FAFC; */
   border: none;
-  border-bottom: 1px dashed #000;
+  border-bottom: 1px solid #000;
   margin-bottom: 40px;
 }
 button{
@@ -455,7 +456,7 @@ li {
   font-size: 2rem !important;
 }
 .line-style--1{
-  border-left: 5px dashed black;
+  border-left: 5px solid black;
   height: 100px;
   margin-bottom: -120px;
 }
@@ -467,11 +468,11 @@ li {
   margin-bottom: 50px;
 }
 .line-style--3{
-  border-right: 1px dashed black;
-  height: 200px;
+  border-right: 1px solid black;
+  height: 150px;
   width: 50%;
-  margin-top: -150px;
-  margin-bottom: 50px;
+  margin-top: -100px;
+  /* margin-bottom: 50px; */
 }
 .spacer{
   /* margin-bottom: 100px; */
