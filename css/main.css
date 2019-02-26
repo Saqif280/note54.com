@@ -350,7 +350,7 @@ button{
   font-weight: 300;
   font-size: 0.8rem;
   font-family: 'Roboto', sans-serif;
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: 2px;
   border: none;
   transition: 300ms;
@@ -384,6 +384,13 @@ img{
   background-size: cover;
   background-position: center center;
 }
+.section-contact, .section-contact *{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+.section-contact h3{
+  font-weight: 300;
+}
 .title{
   font-family: 'Playfair Display', serif;
   text-transform: none;
@@ -402,7 +409,7 @@ img{
   font-size: 0.8rem;
   z-index: 10;
   font-family: 'Roboto', sans-serif;
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: 2px;
 }
 .footer {
