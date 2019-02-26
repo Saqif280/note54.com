@@ -430,6 +430,9 @@ img{
 .inverted a {
   color: #fff;
 }
+.inverted hr {
+  border-top: 4px solid white;
+}
 .inverted .line-style--1{
   border-left-color: #fff;
 }
