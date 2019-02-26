@@ -384,12 +384,10 @@ img{
   background-size: cover;
   background-position: center center;
 }
-.section-contact, .section-contact *{
+.section-contact textarea, .section-contact input{
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
-}
-.section-contact h3{
-  font-weight: 300;
+  letter-spacing: 2px;
 }
 .title{
   font-family: 'Playfair Display', serif;
@@ -419,6 +417,10 @@ img{
   /* border-top: 1px solid #F9FAFC; */
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.footer h5{
+  letter-spacing: 2px;
 }
 .footer ul h5{
   margin-left: 40px;
