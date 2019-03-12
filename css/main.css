@@ -417,6 +417,13 @@ img{
   letter-spacing: 2px;
   text-align: center;
 }
+.bottom-nav{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 300;
+}
 .footer {
   /* margin-top: 100px; */
   padding-top: 200px;
@@ -600,6 +607,13 @@ img {vertical-align: middle;}
 }
 .t-r{
   text-align: right;
+}
+.t-type-2{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.pull-up-sm{
+  margin-top: -25px;
 }
 
 @media only screen and (max-width: 550px) {
