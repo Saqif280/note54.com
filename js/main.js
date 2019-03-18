@@ -14,19 +14,19 @@ $(document).ready(function() {
 		}, 1000);
 	});
 
-	// setTitleOpacity();
-	// // when scroll
-	// $(window).scroll(function(element){
-	// 	setTitleOpacity();
-	// });
-	//
-	// function setTitleOpacity() {
-	// 	var scrollTop = $(window).scrollTop();
-	// 	var wHeight = $(window).height();
-	// 	var opacity = scrollTop/wHeight;
-	// 	if (opacity > 1) opacity = 1;
-	// 	$('.title').css("opacity", opacity);
-	// }
+	setTitleOpacity();
+	// when scroll
+	$(window).scroll(function(element){
+		setTitleOpacity();
+	});
+
+	function setTitleOpacity() {
+		var scrollTop = $(window).scrollTop();
+		var wHeight = $(window).height();
+		var opacity = scrollTop/wHeight;
+		if (opacity > 1) opacity = 1;
+		$('.title').css("opacity", opacity);
+	}
 
 
 	// carousel
