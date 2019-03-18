@@ -478,6 +478,11 @@ li {
   margin-left: 20px;
   margin-right: 20px;
 }
+.left-quote{
+  position: absolute;
+  top: 14px;
+  left: 7px;
+}
 .quote_title{
   text-transform: uppercase;
   font-size: 0.5rem;
