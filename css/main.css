@@ -440,6 +440,9 @@ img{
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+.footer p, .footer a{
+  font-size: 0.7rem;
+}
 .footer ul{
   float: right;
 }
@@ -452,19 +455,21 @@ img{
 .inverted{
   color: #fff;
   background-color: #1b1b1b;
+  color: #000;
+  background-color: #F9FAFC;
 }
 .inverted a {
-  color: #fff;
+  /* color: #fff; */
 }
 .inverted hr {
-  border-top: 4px solid white;
+  /* border-top: 4px solid white; */
 }
 .inverted .line-style--1{
-  border-left-color: #fff;
+  /* border-left-color: #fff; */
 }
 .inverted .line-style--2,
 .inverted .line-style--3{
-  border-right-color: #fff;
+  /* border-right-color: #fff; */
 }
 
 ul {
