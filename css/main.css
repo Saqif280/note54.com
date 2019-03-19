@@ -446,14 +446,15 @@ img.mockup{
 .footer p, .footer a{
   font-size: 0.7rem;
 }
-.footer ul{
-  float: right;
+.footer li{
+  margin-left: 0;
+  margin-right: 40px;
 }
 .footer h5{
   letter-spacing: 2px;
 }
 .footer ul h5{
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 .inverted{
   color: #fff;
@@ -642,6 +643,10 @@ img {vertical-align: middle;}
 }
 
 @media only screen and (max-width: 550px) {
+  .navbar ul{
+    margin-top: 10px;
+    float: none;
+  }
   .navbar, .footer{
     text-align: center;
   }
