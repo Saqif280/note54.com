@@ -632,6 +632,11 @@ img {vertical-align: middle;}
 .pull-up-sm{
   margin-top: -25px;
 }
+.sans-serif{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
 @media only screen and (max-width: 550px) {
   .navbar, .footer{
