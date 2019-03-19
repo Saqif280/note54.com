@@ -373,6 +373,9 @@ img{
   width: 100%;
   display: block;
 }
+img.mockup{
+  margin-bottom: 30px;
+}
 
 /* areas */
 .content{
