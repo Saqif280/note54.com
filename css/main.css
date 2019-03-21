@@ -655,6 +655,24 @@ img {vertical-align: middle;}
 .hideme{
   opacity: 0;
 }
+.underline::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 5px;
+  background: #000;
+  transition: width 1000ms;
+  transition-delay: 500ms;
+}
+.inverted .underline::after{
+  margin-left: auto;
+  margin-right: auto;
+  height: 2px;
+  background: #fff;
+}
+.underline-viewed::after{
+  width: 100%;
+}
 
 @media only screen and (max-width: 550px) {
   .navbar ul{

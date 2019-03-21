@@ -30,21 +30,35 @@ $(document).ready(function() {
 
 
 	// fade elements in on scroll
-	setElementOpacity();
+	triggerScrollAnimations();
   $(window).scroll( function(){
-		setElementOpacity();
+		triggerScrollAnimations();
   });
 
-	function setElementOpacity(){
+	function triggerScrollAnimations(){
     /* Check the location of each desired element */
     $('.hideme').each( function(i){
-			var bottom_of_object = $(this).position().top + $(this).outerHeight();
       var center_of_object = $(this).position().top + $(this).outerHeight()/2;
 			var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-      /* If the object is completely visible in the window, fade it it */
+			console.log(center_of_object);
+
+      /* If the object is completely visible in the window, fade it in */
       if( bottom_of_window > center_of_object ){
         $(this).animate({'opacity':'1'},500);
+      }
+    });
+
+		$('.underline').each( function(i){
+			var bottom_of_object = $(this).position().top + $(this).outerHeight();
+			var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+
+			// console.log(bottom_of_object);
+
+      /* If the object is completely visible in the window, fade it in */
+      if( bottom_of_window > bottom_of_object ){
+        $(this).addClass('underline-viewed');
       }
     });
 	}
