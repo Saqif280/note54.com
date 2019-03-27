@@ -459,7 +459,7 @@ img.mockup{
   /* margin-left: 20px; */
 }
 
-.inverted * {
+.inverted *:not(h2) {
   font-family: "Lato", sans-serif !important;
 }
 .inverted p{
