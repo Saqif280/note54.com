@@ -304,8 +304,7 @@ h1{
   font-size: 6rem;
 }
 h2{
-  font-size: 4rem;
-  font-weight: lighter;
+  font-size: 5rem;
 }
 h3{
   font-size: 3rem;
@@ -449,17 +448,17 @@ img.mockup{
   font-size: 0.7rem;
 }
 .footer li{
-  margin-left: 0;
-  margin-right: 40px;
+  margin-right: 0;
+  margin-left: 40px;
 }
 .footer h5{
   letter-spacing: 2px;
 }
-.footer ul h5{
-  /* margin-left: 20px; */
+h5.social{
+  margin-left: 40px;
 }
 
-.inverted *:not(h2) {
+.inverted p, .inverted h5 {
   font-family: "Lato", sans-serif !important;
 }
 .inverted p{
@@ -495,8 +494,8 @@ ul {
 }
 li {
   display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  /* margin-right: 20px; */
 }
 .left-quote{
   position: absolute;
@@ -640,6 +639,9 @@ img {vertical-align: middle;}
 .t-r{
   text-align: right;
 }
+.f-r-md{
+  float: right;
+}
 .t-type-2{
   font-family: 'Lato', sans-serif;
   text-align: center;
@@ -663,7 +665,7 @@ img {vertical-align: middle;}
   content: '';
   display: block;
   width: 0;
-  height: 4px;
+  height: 2px;
   background: #000;
   transition: width 1000ms;
   transition-delay: 500ms;
@@ -678,9 +680,9 @@ img {vertical-align: middle;}
   /* margin-bottom: 0; */
 }
 .inverted .underline::after{
-  margin-left: auto;
+  /* margin-left: auto;
   margin-right: auto;
-  height: 2px;
+  height: 2px; */
   background: #fff;
   /* margin-top: 0px; */
 }
@@ -700,5 +702,11 @@ img {vertical-align: middle;}
   }
   .footer ul{
     margin-bottom: 60px;
+  }
+}
+/* med */
+@media only screen and (max-width: 768px){
+  .f-r-md{
+    float: none;
   }
 }
