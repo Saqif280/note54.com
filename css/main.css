@@ -305,6 +305,8 @@ h1{
 }
 h2{
   font-size: 5rem;
+  font-size: 3rem;
+  line-height: 105px;
 }
 h3{
   font-size: 3rem;
