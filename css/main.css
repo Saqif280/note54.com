@@ -531,7 +531,8 @@ li {
   background-size: cover;
   /* height: 100%; */
   height: 500px;
-  width: 100%;
+  width: calc(50% - 5px);
+  display: inline-block;
   /* -webkit-filter: grayscale(1);
   filter: grayscale(1); */
 }
@@ -542,11 +543,15 @@ li {
   /* height: 100%; */
 
   height: 500px;
-  width: 100%;
+  width: calc(50% - 5px);
+  display: inline-block;
   /* -webkit-filter: grayscale(1);
   filter: grayscale(1); */
 }
-
+.space{
+  display: inline-block;
+  width: 10px;
+}
 .row-eq-height {
   display: -webkit-box;
   display: -webkit-flex;
@@ -724,5 +729,12 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 768px){
   .f-r-md{
     float: none;
+  }
+  .footer h5{
+    margin-left: 0;
+  }
+  .footer li{
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
