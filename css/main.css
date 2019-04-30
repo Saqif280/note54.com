@@ -697,9 +697,9 @@ img {vertical-align: middle;}
   /* width: 100px; */
 }
 
-.inverted .underline{
-  /* margin-bottom: 0; */
-}
+/* .inverted .underline{
+  margin-bottom: 0;
+} */
 .inverted .underline::after{
   /* margin-left: auto;
   margin-right: auto;
