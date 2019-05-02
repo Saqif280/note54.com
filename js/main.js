@@ -23,7 +23,7 @@ $(document).ready(function() {
 
 	function fromInternal(){
 		// return document.referrer.indexOf(location.protocol + "//" + location.host) === 0;
-		return true;
+		return false;
 	}
 
 	// slide to id
