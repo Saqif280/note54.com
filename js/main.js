@@ -1,5 +1,31 @@
 $(document).ready(function() {
 
+	// loader
+	if(!fromInternal()){
+		$('.number').animate({'opacity': 0.3},500);
+		var i = 1;
+		function incrementLoader() {
+			if(i <= 54) {
+				$('.number').text(i++);
+				setTimeout(incrementLoader, 30);
+			}
+			if(i == 54){
+				$('.number').animate({'opacity': 1},1000);
+				setTimeout(function(){
+					$('.loader').fadeOut(1000);
+				}, 1000);
+			}
+		}
+		setTimeout(incrementLoader, 0);
+	} else {
+		$('.loader').fadeOut(0);
+	}
+
+	function fromInternal(){
+		// return document.referrer.indexOf(location.protocol + "//" + location.host) === 0;
+		return true;
+	}
+
 	// slide to id
 	$("a[href^='#']").click(function(e) {
 		e.preventDefault();
@@ -41,7 +67,7 @@ $(document).ready(function() {
       var center_of_object = $(this).position().top + $(this).outerHeight()/2;
 			var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-			console.log(center_of_object);
+			// console.log(center_of_object);
 
       /* If the object is completely visible in the window, fade it in */
       if( bottom_of_window > center_of_object ){
@@ -84,7 +110,9 @@ $(document).ready(function() {
 		for (i = 0; i < slides.length; i++) {
 				slides[i].style.display = "none";
 		}
-		slides[slideIndex-1].style.display = "block";
+		if(slides[slideIndex-1] !== undefined){
+			slides[slideIndex-1].style.display = "block";
+		}
 	}
 
 	$(".prev").click(function(){
@@ -95,3 +123,4 @@ $(document).ready(function() {
 		plusSlides(1);
 	});
 });
+
