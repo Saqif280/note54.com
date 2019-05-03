@@ -1,4 +1,13 @@
 $(document).ready(function() {
+	console.log(localStorage.internal);
+
+	// prevent link redirect until internal var updated
+	$('a.internal').click(function(e){
+		e.preventDefault();
+		localStorage.internal = true;
+		console.log(localStorage.internal);
+		window.location.href = $(this).attr('href');
+	});
 
 	// loader
 	if(!fromInternal()){
@@ -22,8 +31,13 @@ $(document).ready(function() {
 	}
 
 	function fromInternal(){
-		// return document.referrer.indexOf(location.protocol + "//" + location.host) === 0;
-		return false;
+		if (localStorage.internal && localStorage.internal == "true") {
+			localStorage.internal = false;
+			return true;
+		} else {
+			localStorage.internal = false;
+			return false;
+		}
 	}
 
 	// slide to id
